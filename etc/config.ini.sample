@@ -10,7 +10,7 @@ auth_prefix = /auth/
 auth_ssl = yes
 account = system
 username = root
-password = password
+password = account_password
 
 [nova]
 network_label = <PINGABLE NETWORK>
@@ -18,7 +18,7 @@ network_label = <PINGABLE NETWORK>
 [KongRequester]
 auth_url = http://keystone.somedomain.com:keystone_port
 user = keystone_user
-password = password
+password = keystone_password
 tenantname = tenantid
 region = RegionOne
 
@@ -27,7 +27,7 @@ region = RegionOne
 [glance-swift]
 auth_url = http://keystone.somedomain.com:keystone_port
 user = glance_user
-password = password
+password = glance_password
 tenantname = service
 region = RegionOne
 container = glance
